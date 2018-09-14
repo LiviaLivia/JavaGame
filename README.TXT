@@ -24,4 +24,4 @@ Ich habe auf der Seite http://java-online.ch/gamegrid/index.php bei den wichtigs
 Dritte Doppellektion:
 Ich habe an meinem Spiel so abgeändert, dass der Actor nun am einem Klick der Maus folgt und sobald er ein Objekt berürt wieder an die Startposition zurück und man muss wieder mit der Maus klicken.  
 
-12.09.2018
+Vierte Doppellektion:
