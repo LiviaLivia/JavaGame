@@ -1,0 +1,16 @@
+
+/**
+ * Beschreiben Sie hier die Klasse l.
+ * 
+ * @author (Ihr Name) 
+ * @version (eine Versionsnummer oder ein Datum)
+ */
+public class Kondition 
+{
+    
+    public boolean mouseEvent(GGMouse mouse)
+  {
+    flag = true;
+    return true; 
+  }
+}

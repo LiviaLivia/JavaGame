@@ -1,0 +1,51 @@
+
+// JGameEx22a.java
+
+import ch.aplu.jgamegrid.*;
+import java.awt.*;
+
+public class JGameEx22a extends GameGrid 
+  implements GGMouseTouchListener, GGMouseListener
+{
+  private Point hotSpot = null;
+  private Actor nemo = new Actor("logo_circle.png");
+ 
+  public JGameEx22a()
+  {
+    super(3000, 3000, 1, false);
+    setTitle("Drag the circle!");
+    nemo.addMouseTouchListener(this, GGMouse.lPress | GGMouse.lRelease);
+    addMouseListener(this, GGMouse.lDrag);
+    addActor(nemo, new Location(150, 150));
+    show();
+  }
+  
+  public boolean mouseEvent(GGMouse mouse)
+  {
+    if (hotSpot == null)
+      return false;
+    Location loc =
+      new Location(mouse.getX() - hotSpot.x, mouse.getY() - hotSpot.y);
+    nemo.setLocation(loc);
+    refresh();
+    return false;
+  }
+
+  public void mouseTouched(Actor actor, GGMouse mouse, Point spot)
+  {
+    switch (mouse.getEvent())
+    {
+      case GGMouse.lPress:
+        hotSpot = spot;
+        break;
+      case GGMouse.lRelease:
+        hotSpot = null;
+        break;
+    }
+  }
+
+  public static void main(String[] args)
+  {
+    new JGameEx22a();
+  }
+} 

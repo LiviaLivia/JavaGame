@@ -1,0 +1,13 @@
+
+class Circle extends Actor
+{
+  public Circle()
+  {
+    super("logo_circle.png");
+  }
+  
+  public void act()
+  {
+    move();
+  }
+}
