@@ -1,15 +1,16 @@
 
+
 import ch.aplu.jgamegrid.*;
 import ch.aplu.util.*;
 import java.awt.*;
 
-class Dart extends Actor implements GGMouseListener
+class Player extends Actor implements GGMouseListener
 {
     private Location oldLocation = new Location();
 
-    public Dart()
+    public Player()
     {
-        super("logo_circle.png");  
+        super("Character.png");  
     }
 
     public boolean mouseEvent(GGMouse mouse)

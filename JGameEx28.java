@@ -1,3 +1,6 @@
+
+
+
 // JGameEx28.java
 
 import ch.aplu.jgamegrid.*;
@@ -6,28 +9,32 @@ import java.awt.*;
 
 public class JGameEx28 extends GameGrid implements GGActorCollisionListener, GGMouseListener
 {
-  private final Location startLocation = new Location(100, 300);
+  private final Location startLocation = new Location(100, 100);
   public static boolean flag = false;
+  
   public JGameEx28()
   {
-    super(600, 600, 1, null, "black.gif", false);
+    super(700, 200, 1, null, "black.gif", false);
     setTitle("Don't touch the rings.");
     setSimulationPeriod(50);
-    Dart dart = new Dart();
-    addActor(dart, new Location(100, 300));
+    Player player = new Player();
+    addActor(player, new Location(100, 100));  
     addMouseListener (this ,GGMouse.lPress); 
-    addMouseListener(dart, GGMouse.move);
+    addMouseListener(player, GGMouse.move);
+    player.addCollisionActor(player); 
+    Crystal crystal = new Crystal();
+    addActor(crystal, new Location(680, 100));
     
-      
-    dart.setCollisionSpot(new Point(0, 0)); 
-    
-    for (int i = 0; i < 20; i++)
+    for (int i = 0; i < 8; i++)
     {  
       Actor ring = new Actor("circle_ballon.png");
-      addActor(ring, new Location((int)(600*Math.random() + 1), 
-                                     (int)(600*Math.random() + 1)));
-      dart.addCollisionActor(ring);
-      dart.addActorCollisionListener(this);
+      int j = 50;
+      while (j <100)j = ((int) Math.round( 700*Math.random() +1));
+      int k = ((int) Math.round(200*Math.random() +1));
+      addActor(ring, new Location((int)j , (int)k));
+      player.addCollisionActor(ring);
+      player.addActorCollisionListener(this);
+
     }
     show();
     doRun();
@@ -39,9 +46,9 @@ public class JGameEx28 extends GameGrid implements GGActorCollisionListener, GGM
     return true; 
   }
   
-  public int collide(Actor actor1, Actor actor2)
+  public int collide(Actor player, Actor ring)
   {
-    actor1.setLocation(startLocation);
+    player.setLocation(startLocation);
     flag = false;
     return 0;
   }
