@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=Player
-comment1.params=
-comment1.target=Player()
-comment2.params=mouse
-comment2.target=boolean\ mouseEvent(ch.aplu.jgamegrid.GGMouse)
-numComments=3
