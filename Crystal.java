@@ -1,6 +1,3 @@
-
-
-
 import ch.aplu.jgamegrid.*;
 import ch.aplu.util.*;
 import java.awt.*;
