@@ -11,14 +11,14 @@ class Player extends Actor implements GGMouseListener
     {
         super("Character.png");  
     }
-
+    
     public boolean mouseEvent(GGMouse mouse)
     {
         if (JavaGame.flag)
         {
             Location location = gameGrid.toLocationInGrid(mouse.getX(), mouse.getY());
             setLocation(location);
-            JavaGame.flag = false;            
+                      
         }
         return true;
     }

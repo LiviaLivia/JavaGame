@@ -9,7 +9,7 @@ public class Npc extends Actor
     public Npc()
     {
         super("Bat.png");
-
+        setCollisionSpot(new Point(0, 18));
     }
     
     public void act()

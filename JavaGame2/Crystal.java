@@ -11,6 +11,11 @@ class Crystal extends Actor
       
       
         }
-
+        
+        public void gotCristal ()
+        {
+            int r = 2;
+            
+        }
     
 }

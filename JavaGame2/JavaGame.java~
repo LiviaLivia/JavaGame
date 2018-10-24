@@ -9,13 +9,15 @@ public class JavaGame extends GameGrid implements GGActorCollisionListener, GGMo
   private final Location startLocation = new Location(100, 100);
   public static boolean flag = false;
   
+  public static int r = 1;
+  
   public JavaGame()
   {
     super(700, 200, 1, null, "Stone2.png", false);
-    setTitle("Get the Cristal,but don't touch the Bats");
+    setTitle("Get the Cristal while avoiding the Bats");
     setSimulationPeriod(10);
     Player player = new Player();
-    addActor(player, new Location(80, 100));  
+    addActor(player, new Location(80, 100));
     addMouseListener (this ,GGMouse.lPress); 
     addMouseListener(player, GGMouse.move);
     player.addCollisionActor(player); 
@@ -26,7 +28,7 @@ public class JavaGame extends GameGrid implements GGActorCollisionListener, GGMo
     {  
       Npc bat = new Npc();
       int j = 50;
-      while (j <200)j = ((int) Math.round( 700*Math.random() +1));
+      while (j <200||j>650)j = ((int) Math.round( 700*Math.random() +1));
       int k = ((int) Math.round(200*Math.random() +1));
       addActor(bat, new Location((int)j , (int)k),90);
       player.addCollisionActor(bat);
@@ -46,7 +48,7 @@ public class JavaGame extends GameGrid implements GGActorCollisionListener, GGMo
   public int collide(Actor player, Actor bat)
   {
     player.setLocation(startLocation);
-    //flag = false;
+    flag = false;
     return 0;
   }
   
