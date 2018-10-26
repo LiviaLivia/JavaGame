@@ -1,0 +1,17 @@
+
+
+
+public class TextActor extends Actor
+{
+    
+
+    
+    public TextActor()
+    {
+        // Instanzvariable initialisieren
+        
+    }
+
+    
+    
+}
