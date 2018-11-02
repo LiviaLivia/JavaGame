@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=JavaGame
+comment1.params=
+comment1.target=JavaGame()
+comment2.params=mouse
+comment2.target=boolean\ mouseEvent(ch.aplu.jgamegrid.GGMouse)
+comment3.params=player\ actor2
+comment3.target=int\ collide(ch.aplu.jgamegrid.Actor,\ ch.aplu.jgamegrid.Actor)
+comment4.params=
+comment4.target=void\ startText()
+comment5.params=
+comment5.target=void\ levelText()
+comment6.params=player
+comment6.target=void\ fail(Player)
+comment7.params=
+comment7.target=void\ lifeText()
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9
