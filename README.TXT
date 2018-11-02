@@ -24,4 +24,14 @@ Ich habe auf der Seite http://java-online.ch/gamegrid/index.php bei den wichtigs
 Dritte Doppellektion:
 Ich habe an meinem Spiel so abgeändert, dass der Actor nun am einem Klick der Maus folgt und sobald er ein Objekt berürt wieder an die Startposition zurück und man muss wieder mit der Maus klicken.  
 
-Vierte Doppellektion:
+Vierte Doppellektion :
+Ich habe versucht ein Npc herzustellen die vertikal hin und her gehen. Dies gelang nicht direkt und ich brauchte recht lange um dies richtig um zu setzen.
+Als ich dieses Problem behoben habe konnte ich den Player nicht mehr beheben dieses Problem brauchte auch einige Zeit.
+
+Danach begann ich weitere Methoden zu implementieren welche gleichzeitig und über mehrere Lektionen dauerten daher liste ich sie hier unten auf.
+Lebensanzeige
+Levelaufstieg
+Level anzeige
+Schwierigkeitserhöhung bei Levelaufstieg
+Levelscore beim Sterben
+
