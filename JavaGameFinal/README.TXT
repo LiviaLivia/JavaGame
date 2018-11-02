@@ -12,3 +12,24 @@ VERSION oder DATUM:
 WIE IST DAS PROJEKT ZU STARTEN:
 AUTOR(EN):
 BENUTZERHINWEISE:
+Dokumentation Java Projekt
+
+Erste Doppellektion:
+Nachdem uns die Klassenbibliothek GameGrid vorgestellt worden war, habe ich mich entschieden mit Hilfe von dieser ein einfaches Spiel zu gestallten. Als erstes habe ich auf der Seite http://java-online.ch/gamegrid/index.php die Beispiele angeschaut und mich mit dieser Klasse ein bisschen auseinander zu setzen. Dann habe ich anhand des Beispiel-Code kleine Programme ausgetestet um zu schauen ob ich das Konzept zum Spiel programmieren mit GameGrid verstanden habe.
+
+Zweite Doppellektion:
+Ich habe auf der Seite http://java-online.ch/gamegrid/index.php bei den wichtigsten Programmiertechniken ein Beispiel Spiel gefunden, welches einige Methoden beinhaltet, die mein Spiel auf beinhalten sollte. Bei diesem Spiel geht es darum mit einem Dartpfeil Ballone zu platzen, die zufällig auf dem Spielfeld erstellt werden. Ich habe dies ein wenig abgeändert Form übernommen. Ich habe mich damit befasst wie GameGrid beim visuellen Aspekt eines Spiels vorgeht und habe mein Spiel so verändert und habe 
+
+Dritte Doppellektion:
+Ich habe an meinem Spiel so abgeändert, dass der Actor nun am einem Klick der Maus folgt und sobald er ein Objekt berürt wieder an die Startposition zurück und man muss wieder mit der Maus klicken.  
+
+Vierte Doppellektion :
+Ich habe versucht ein Npc herzustellen die vertikal hin und her gehen. Dies gelang nicht direkt und ich brauchte recht lange um dies richtig um zu setzen.
+Als ich dieses Problem behoben habe konnte ich den Player nicht mehr beheben dieses Problem brauchte auch einige Zeit.
+
+Danach begann ich weitere Methoden zu implementieren welche gleichzeitig und über mehrere Lektionen dauerten daher liste ich sie hier unten auf.
+Lebensanzeige
+Levelaufstieg
+Level anzeige
+Schwierigkeitserhöhung bei Levelaufstieg
+Levelscore beim Sterben
